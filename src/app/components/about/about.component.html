@@ -1,0 +1,37 @@
+<section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            Hello! I'm Sayuj, a passionate Full Stack Developer with a keen interest in building
+            exceptional digital experiences. I enjoy creating things that live on the internet,
+            whether that be websites, applications, or anything in between.
+          </p>
+          <p>
+            My journey in web development started back in [Year] when I decided to try editing
+            custom Tumblr themes — turns out hacking together a custom reblog button taught me
+            a lot about HTML & CSS!
+          </p>
+          <p>
+            Fast-forward to today, and I've had the privilege of working at [relevant experience].
+            My main focus these days is building accessible, inclusive products and digital
+            experiences for a variety of clients.
+          </p>
+        </div>
+  
+        <div class="skills-section">
+          <h3>Skills & Technologies</h3>
+          <div class="skills-grid">
+            @for (skill of skills; track skill) {
+              <div class="skill-item">
+                <span class="skill-dot"></span>
+                {{ skill }}
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

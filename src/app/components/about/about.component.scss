@@ -1,0 +1,191 @@
+/* 3D Effect - Create a parallax-like background */
+body {
+    margin: 0;
+    padding: 0;
+    background: #002E25; /* Dark background for the whole page */
+  }
+  
+  .hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #002E25;
+    perspective: 1000px; /* Adding perspective for depth */
+  
+    .webgl {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transform: translateZ(-1px) scale(2); /* Make the background appear far away */
+      z-index: -1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      transform: translateZ(1px); /* Move content forward to contrast the background */
+      z-index: 2;
+    }
+  }
+  
+  .about {
+    padding: 100px 0;
+    background-color: #002E25; /* Keeping the background consistent */
+    color: #ffffff;
+  
+    /* Adding a slight 3D effect on scroll for smooth transition */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .section-title {
+      color: #95BF47;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 1;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 70px;
+        height: 3px;
+        background-color: #95BF47;
+      }
+    }
+  
+    .about-content {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 50px;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .about-text {
+      p {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    .skills-section {
+      h3 {
+        color: #95BF47;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+  
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+  
+      .skill-item {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+  
+        .skill-dot {
+          width: 8px;
+          height: 8px;
+          background-color: #95BF47;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  
+  .features {
+    padding: 100px 0;
+    background-color: #003a2b;
+    color: #ffffff;
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  
+    .section-title {
+      color: #95BF47;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      position: relative;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 70px;
+        height: 3px;
+        background-color: #95BF47;
+      }
+    }
+  
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+  
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .feature-item {
+      background-color: #003a2b;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      }
+  
+      .icon {
+        font-size: 2rem;
+        color: #95BF47;
+        margin-bottom: 15px;
+      }
+  
+      h4 {
+        color: #ffffff;
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+  
+      p {
+        color: #b0c2b7;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  
