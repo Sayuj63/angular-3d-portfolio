@@ -1,59 +1,39 @@
-# SayujPortfolio
+# Angular 3D Portfolio with Three.js Integration
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+This project is a professional 3D portfolio website built using **Angular** and **Three.js**. The portfolio showcases expertise in Shopify theme development, features a 3D interactive hero section, and includes a scrolling section for displaying certifications and achievements. Designed to stand out in portfolio-building competitions, this project combines modern web technologies with a clean, responsive design.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
+- **3D Hero Section**: Immersive 3D experience created with Three.js.
+- **Shopify Expertise**: Highlights skills in Shopify theme design and development with examples of previous projects.
+- **Scrolling Certificates Section**: Displays certifications dynamically in a visually appealing layout.
+- **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
+- **Portfolio-Ready for Competitions**: A polished and professional presentation to showcase your skills effectively.
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🔧 Technologies Used
+- **Angular**: Framework for building scalable and dynamic single-page applications.
+- **Three.js**: For creating and rendering 3D interactive elements.
+- **TypeScript**: Type-safe and scalable development.
+- **CSS/SCSS**: Custom styling for a sleek, responsive UI.
+- **Node.js & NPM**: For dependency management and development environment.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 📂 Folder Structure
+src/ ├── app/ │ ├── app.module.ts # Main application module │ ├── app-routing.module.ts # Routing configuration │ ├── components/ # Angular components for the UI │ ├── services/ # Services for handling business logic ├── assets/ # Static assets like images or 3D models ├── styles/ # Global and reusable styles └── main.ts # Application entry point
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 🛠️ Setup Instructions
 
-## Building
+### Prerequisites
+Ensure you have the following installed on your system:
+- **Node.js** (v14 or higher)
+- **Angular CLI** (v15 or higher)
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+📜 License
+This project is licensed under the MIT License.
